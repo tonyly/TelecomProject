@@ -1,0 +1,25 @@
+h1 {
+  text-align:center;
+}
+
+h2 {
+  text-align:center;
+}
+
+.infopane {
+  text-align:center;
+}
+
+.infopane input {
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+
+.infopane select {
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.buttonpane {
+  text-align: center;  
+}

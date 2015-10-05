@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="signupcss.css"/>
+    <title>Sign Up For an Account </title>
+  </head>
+  <body>
+    <h1>Telegroup Communications, LLC.<h1>
+    <h2>Sign up for an account</h2>
+    <form action="create.php" method="post">
+      <div class="infopane">
+        Name <input type="text" name="user" value=""><br>
+        E-mail <input type="text" name="email" value=""><br>
+        Password <input type="password" name="pass" value=""><br>
+        Confirm <input type="password" name="confirm" value=""><br>
+        Address <input type="text" name="address" value=""><br>
+        City <input type="text" name="city" value=""><br>
+        Account Type
+        <select name="accountoption">
+          <option value="Retail">Retail Customer</option>
+          <option value="Commerical">Commercial Customer</option>
+        </select>
+        <br>
+      </div>
+      <div class="buttonpane">
+        <input type="submit">
+      </div>
+      
+    </form>
+  </body>
+</html>

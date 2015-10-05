@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link type = "text/css" rel="stylesheet" href="dashboardcss.css"/>
+</head>
+<body>
+  
+  <script src="login.html" type="HTML"></script>
+  <h1>WELCOME
+  <script>document.write(thename)</script> </h1>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Add Service</a></li>
+      <li><a href="#">Add Package</a></li>
+      <li><a href="#">View Balance</a></li>
+      <li><a href="#">Cancel Service</a></li>
+      <li><a href="#">Contact Us</a></li>
+      
+    </ul>
+    
+  </div>
+  <div class="main">
+
+  </div>
+
+<script>
+
+
+	
+</script>
+
+ </body>
+</html>
+
+
+

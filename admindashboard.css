@@ -1,0 +1,36 @@
+li {
+  list-style-type: none;
+}
+
+a:link, a:visited {
+  color: #000000;
+  text-decoration:none;
+}
+
+a:link:active {
+  color: #e60000;
+}
+
+a:hover {
+  color:#707068;
+}
+
+.leftpanel {
+position: relative;
+background-color:#eaeae8;
+float: left;
+width: 20%;
+height: 100%;
+}
+
+.rightpanel {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 78%;
+  background-color:#ccffff;
+}
+
+p {
+  font-size: 72px;
+}

@@ -1,0 +1,21 @@
+Classes:
+-Login accounts
+
+Login accounts:
+-Customers:
+  -Name
+    -Login/Password
+  -Packages/Services subscribed to (pointers to other objects)
+  -View balance
+  -View payment history
+  -Reset Password
+
+Representatives:
+-Customers:
+  -Name
+    -Login/Password
+-Functions:
+  -Create service object to database
+  -Create a package objects (has services) to database
+  -Add a service to existing package
+  -Delete a service/package object

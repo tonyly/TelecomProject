@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="/home/linux/ieng6/oce/09/eklui/Documents/CSE110/the-a-team/users.js"></script>
+    <link type="text/css" rel="stylesheet" href="logincss.css"/>
+    <title>login</title>
+  </head>
+  <body>
+    <h2>Welcome to Telegroup Communications Group, LLC.</h2>
+    <form action="demo_form.asp">
+      <div><br>
+        Email<input type="text" id="EmailEntered" value=><br></br>
+        Password<input type="password" id="PasswordEntered" value=><br>
+        <a href="/home/linux/ieng6/cs100w/cs100wbg/Desktop/A%20Team/comingsoon.html">
+          Forgot Password?</a><br></br>
+
+	<button type="button" onclick=addNewUser()> Create Accont </button>
+	<button type="button" onclick=findUser()> Log In </button>
+
+
+
+       <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p><br>
+<!--Spike test for first time using JavaScript-->
+<script src="/home/linux/ieng6/cs100w/cs100wbg/Desktop/A Team/simplejs.js"></script>
+
+
+<p><a href="#" onclick=findUser();>Click Me</a></p>
+
+<br>
+<br>
+<p> Fill in this form to change your password: </p>
+<br>
+Username<input type="text" id="Username" value=>
+<br>
+Old Password<input type="password" id="OldPass" value=>
+<br>
+New Password<input type="password" id="NewPass" value=>
+
+
+<!-- test scripts for login users -->
+<script>
+function User( username, password ){
+	this.username = username;
+	this.password = password;
+}
+
+<!-- temporary database of users using array -->
+var database = new Array();
+var numAccs = 0;
+
+var addNewUser = function(){
+	var userInput1=document.getElementById('EmailEntered').value;
+	var userInput2=document.getElementById('PasswordEntered').value;
+	database[numAccs] = new User( userInput1, userInput2 );
+	numAccs++;
+	alert('Successfully created account...' +userInput1);
+	alert('Number of accounts in database: ' + numAccs);
+};
+
+var findUser = function(){
+	var userInput3=document.getElementById('EmailEntered').value;
+	var userInput4=document.getElementById('PasswordEntered').value;
+	y = 0;
+	for( i=0; i < numAccs; i++){
+		if( database[i].username == userInput3 && database[i].password == userInput4 ){
+			alert('login successful! Welcome '+userInput3);
+			return;
+		}
+	}
+	alert('login failed');
+};
+
+
+
+</script>
+
+
+
+      </div>
+    </form>
+  </body>
+</html>
